@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+$:.unshift(File.expand_path("../lib", File.dirname(__FILE__)))
+
+require 'tweetrb/options_parser'
+options = Tweetrb::OptionsParser.parse(ARGV)
+
+p options
+
